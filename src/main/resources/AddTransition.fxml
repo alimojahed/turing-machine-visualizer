@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mojahed.turing.ui.AddTransitionController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="51.0" layoutY="107.0" text="DELTA(" />
+            <ComboBox layoutX="92.0" layoutY="103.0" prefHeight="25.0" prefWidth="46.0" fx:id="currentStateComboBox"/>
+            <Label layoutX="144.0" layoutY="107.0" text="," />
+            <ComboBox layoutX="157.0" layoutY="103.0" prefHeight="25.0" prefWidth="50.0" fx:id="currentInputComboBox"/>
+            <Label layoutX="216.0" layoutY="107.0" text=") = ( " />
+            <ComboBox layoutX="241.0" layoutY="103.0" prefHeight="25.0" prefWidth="95.0" fx:id="nextStateComboBox"/>
+            <Label layoutX="342.0" layoutY="107.0" text="," />
+            <ComboBox layoutX="349.0" layoutY="103.0" prefHeight="25.0" prefWidth="95.0" fx:id="toWriteComboBox"/>
+            <Label layoutX="454.0" layoutY="107.0" text="," />
+            <ComboBox layoutX="463.0" layoutY="103.0" prefHeight="25.0" prefWidth="95.0" fx:id="moveComboBox"/>
+            <Label layoutX="565.0" layoutY="107.0" text=")" />
+            <Button layoutX="280.0" layoutY="212.0" mnemonicParsing="false" text="ADD" fx:id="addButton"/>
+            <Button layoutX="242.0" layoutY="268.0" mnemonicParsing="false" text="Construct Machine" fx:id="constructButton"/>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
